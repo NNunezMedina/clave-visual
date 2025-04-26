@@ -1,0 +1,44 @@
+
+@import 'tailwindcss';
+
+h1,
+h2 {
+  font-family: 'Instrument Serif', serif;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.cb-1 {
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor:pointer;
+}
+
+.cb-2 {
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor:pointer;
+}
+
+@keyframes fadeGradient {
+  0%, 100% {
+    transform: translateY(-5%) scale(1);
+  }
+  50% {
+    transform: translateY(5%) scale(1.05);
+  }
+}
+
+.animate-fadeGradient {
+  animation: fadeGradient 12s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
